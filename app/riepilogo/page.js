@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 import { api } from "../../lib/api";
 import dynamic from "next/dynamic";
 
-const PDFGenerator = dynamic(() => import("../../components/PDFGenerator"), {
-  ssr: false,
-});
+const PDFGenerator = dynamic(() =>
+  import("../../components/PDFGenerator.js"),
+  { ssr: false }
+);
 
 export default function Riepilogo() {
   const [data, setData] = useState(() => {
