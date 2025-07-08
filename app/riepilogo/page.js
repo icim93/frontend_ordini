@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { api } from "../../lib/api";
 import dynamic from "next/dynamic";
 
-const PDFGenerator = dynamic(() => import("../../components/PDFGenerator"), {
+const PDFGenerator = dynamic(() => import("@/components/PDFGenerator"), {
   ssr: false,
 });
 
